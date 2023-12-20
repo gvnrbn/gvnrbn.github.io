@@ -78,7 +78,7 @@ function flipCard(){
     // console.log(cardsChosen)
     this.setAttribute('src', cardArray[cardId].img)
     if(cardsChosen.length == 2){
-        setTimeout(checkMatch,200)
+        setTimeout(checkMatch,400)
         intentos++
     }
 
@@ -114,7 +114,7 @@ function checkMatch(){
 
     if(cardsWon.length == (cardArray.length/2)){
         resultDisplay.textContent = 'Ganaste en '+intentos+' intentos!'
-        puntajeDisplay.textContent = 'PUNTAJE: '+ calcScore() +'%'
+        puntajeDisplay.textContent = calcScore() +'%'
     }
     
 }
