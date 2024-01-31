@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+
+
+header{
+    background-color: #01180e;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    height: 80px;
+    width: auto;
+    padding-left: 10px;
+}
+
+#nombre_pag{
+    color:#FFF;
+    font-size: 40px;
+    text-align: left;
+    text-justify: left;
+    margin: 0;
+    padding: 0px 10px;
+    width: 100%;
+}
+
+header nav{
+    display: flex;
+    justify-content: right;
+    width: 800px;
+    padding: 0px 10px;
+}
+
+header nav .menu {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    
+}
+
+header nav .menu .menu_button{
+    display: block;
+}
+
+header nav .menu .menu_button a[menu-switcher] {
+    display: block;
+    padding: 30px 30px;
+    text-decoration: none;
+    color: #FFF;
+    background-color: #01180e;
+    cursor: pointer;
+}
+
+header nav .menu .menu_button:hover a[menu-switcher] {
+    background-color: #006c38;
+    box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+.searchtab{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px 15px;
+    padding: 0px 10px;
+    height: 40px;
+    width: 250px;
+    border-radius: 8px;
+}
+
+
+
+
+
+
+body{
+    background-color: #eee;
+}
+
+body nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 70px;
+
+}
+
+body h1{
+    margin-top: 50px;
+    padding-left: 70px;
+    font-size: 60px;
+}
+
+body nav .tabs {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+body nav .tabs .tab{
+    display: block;
+}
+
+body nav .tabs .tab a[data-tab="1"] {
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
+}
+body nav .tabs .tab a[data-tab="4"] {
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+body nav .tabs .tab a[data-switcher] {
+    display: block;
+    margin-top: 20px;
+    padding: 15px 30px;
+    text-decoration: none;
+    color: #FFF;
+    background-color: #006c38;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+body nav .tabs .tab:hover a[data-switcher] {
+    background-color: #04a14d;
+}
+
+body nav .tabs .tab.is-active a[data-switcher] {
+    background-color: #04a14d;
+    font-weight: 700;
+    box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+main {
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+
+.pages{
+    margin-top: 20px;
+    padding: 60px 60px;
+    border-radius: 8px;
+    background-color: #FFF;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.pages .page {
+    display: none;
+}
+
+.pages .page.is-active {
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+h2{
+    margin: 20px 20px;
+    font-size: 30px;
+}
+p {
+    margin: 20px 20px;
+    text-align: justify;
+}
+
+.group-photo {
+    display: inline-block;
+    border: 1px solid #ccc;
+    margin: 15px;
+    margin-top: 0;
+    float: right;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+}
+#img_hist{
+    height: 200px;
+    width: auto;
+    float: right;
+    margin-bottom: 20px;
+    justify-content: center
+
+}
+.desc_hist {
+    padding: 10px 5px;
+    text-align: center;
+    font-size: 10px;
+    font-family: 'Calibri';
+}
+
+
+
+.members {
+    display: inline-block;
+    margin: 10px;
+    border-radius: 4px;
+    width: 210px;
+    box-sizing: border-box; /* Asegura que el borde y el relleno se incluyan en el ancho total */
+}
+.exmembers {
+    display: inline-block;
+    margin: 10px;
+    border-radius: 4px;
+    width: 210px;
+    box-sizing: border-box; /* Asegura que el borde y el relleno se incluyan en el ancho total */
+}
+  
+.members .frame:hover {
+    font-weight: 550;
+    background-color: #ffe8c3;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 10px;
+}
+.exmembers .frame:hover {
+    font-weight: 550;
+    background-color: #f1f1f1;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 10px;    
+}
+
+.members img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    padding: 10px;
+}
+.exmembers img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    padding: 10px;
+}
+  
+.desc {
+    padding: 5px;
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Calibri';
+    
+}
